@@ -1,6 +1,6 @@
 # Neural-Network-Handwritten-Digit-Recognition
 
-https://github.com/user-attachments/assets/f7fd4e78-5cda-4e91-a019-e50df5754d8d
+https://github.com/user-attachments/assets/78dadb71-5f56-43bd-bd0a-12c33d6475f9
 
 This is a project I worked on to recognize handwritten digits using a neural network. It uses the MNIST dataset for training and testing. The model was built and trained with TensorFlow/Keras, and OpenCV is used to process images for predictions.
 
