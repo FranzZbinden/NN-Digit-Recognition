@@ -41,9 +41,11 @@ This project was developed using **Python 3.10**, because TensorFlow supports Py
 ---
 
 ## Installing Libraries
-To install the libraries, run:
-```bash
-pip install tensorflow numpy opencv-python matplotlib
+Install all dependencies from `requirements.txt`:
+```powershell
+python -m pip install -r requirements.txt
+# or, if Python is invoked as 'py'
+py -m pip install -r requirements.txt
 ```
 ---
 
