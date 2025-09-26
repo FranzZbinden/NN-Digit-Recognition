@@ -49,6 +49,28 @@ py -m pip install -r requirements.txt
 ```
 ---
 
+## Configuration (.env)
+
+This app reads `MODEL_MODULE` from the environment. Create a `.env` file in the project root (same folder as `requirements.txt`) to override the default model module.
+
+Example `.env`:
+
+```
+MODEL_MODULE=models.trainingModels.trainingModelTwo
+```
+
+Notes:
+- The default if unset is `models.trainingModels.trainingModelTwo`.
+- You can switch to the MLP with:
+
+```
+MODEL_MODULE=models.trainingModels.trainingModelOne
+```
+
+Without a `.env` file, you can also set it per session:
+- PowerShell: `$env:MODEL_MODULE="models.trainingModels.trainingModelTwo"`
+- Bash: `export MODEL_MODULE="models.trainingModels.trainingModelTwo"`
+
 ## How it works internally
 
  ![image](https://github.com/user-attachments/assets/59431cd7-30ab-47bf-bd0b-05b4c3b4e0d7)

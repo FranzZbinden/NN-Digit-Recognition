@@ -2,5 +2,6 @@ tensorflow
 numpy
 opencv-python
 matplotlib
-
 pillow
+
+python-dotenv
