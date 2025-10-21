@@ -25,7 +25,7 @@ def build_classification_model(
     hidden_units: int = 128,
     num_classes: int = 10,
 ) -> tf.keras.Model:
-    """Create and compile a CNN classifier for better digit recognition."""
+    # Create and compile a CNN classifier for better digit recognition.
     # Ensure channel dimension is included
     if len(input_shape) == 2:
         input_shape = (input_shape[0], input_shape[1], 1)
@@ -87,9 +87,8 @@ def save_model_to_disk(model: tf.keras.Model, filepath: str) -> None:
 def load_model_from_disk(filepath: str) -> tf.keras.Model:
     return tf.keras.models.load_model(filepath)
 
-
+# Read, invert like original, normalize to [0,1], add channel dim, and batch.
 def preprocess_digit_image(image_path: str) -> np.ndarray:
-    """Read, invert like original, normalize to [0,1], add channel dim, and batch."""
     img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
     if img is None:
         raise ValueError(f"Could not read image: {image_path}")
@@ -119,5 +118,3 @@ def predict_digits_in_directory(
         finally:
             image_number += 1
     print(f"Checking for file: {directory}/{filename_prefix}{image_number}.png")
-
-

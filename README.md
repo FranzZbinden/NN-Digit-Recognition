@@ -1,46 +1,68 @@
 # Neural-Network-Handwritten-Digit-Recognition
 
-
 https://github.com/user-attachments/assets/df06494f-9058-482e-95bd-eef450d8261f
 
+# 🧠 NN-Digit Recognition
 
-https://github.com/user-attachments/assets/78dadb71-5f56-43bd-bd0a-12c33d6475f9
-
-This is a project I worked on to recognize handwritten digits using a neural network. It uses the MNIST dataset for training and testing. The model was built and trained with TensorFlow/Keras, and OpenCV is used to process images for predictions.
-
----
-
-## What It Does
-- Trains a neural network to recognize handwritten digits (0-9).
-- Saves the trained model so it can be used later.
-- Allows predictions on custom images of digits stored in a folder "digits".
-- Shows the predicted digit along with the input image.
+A Python project for handwritten digit recognition using a neural network.  
+This solution uses the **MNIST** dataset to train a model (via TensorFlow / Keras) and OpenCV for preprocessing, allowing predictions on custom digit images.
 
 ---
 
-## Adding Handwritten Digit Images
-To make predictions, the program processes custom handwritten digit images. Here are the requirements for the images:
-
-1. **Image Dimensions**: The images must be **28x28 pixels**.
-2. **Color Mode**: The images should be in **grayscale** format.
-3. **File Format**: Save the images in **PNG** format.
-4. **Directory**: Place the images in the `digits/` folder. For example:
-   - `digits/digit1.png`
-   - `digits/digit2.png`
+## 📌 Table of Contents
+- [Overview](#-overview)
+- [Features](#-features)
+- [Technologies & Dependencies](#-technologies--dependencies)
 
 ---
 
-## Tools and Libraries
-- Python 3.10 [Why Version 3.10?](#why-python-310)
-- TensorFlow
-- NumPy
-- OpenCV
-- Matplotlib
+## 📖 Overview
+This project implements a simple neural network to recognize handwritten digits (0–9).  
+It supports:
+- Training a model on the MNIST dataset  
+- Saving and loading the trained model  
+- Accepting custom grayscale digit images to be classified  
+- Displaying predictions with visualization  
 
 ---
 
-### Why Python 3.10?
-This project was developed using **Python 3.10**, because TensorFlow supports Python versions ranging from **3.7 to 3.11**. Using Python 3.10 ensures full compatibility with TensorFlow and other libraries.
+## ✨ Features
+- End-to-end pipeline: **data → model → inference**  
+- Simple architecture (easy to understand & extend)  
+- Predict custom digit images (PNG, 28×28 grayscale)  
+- Modular codebase  
+
+---
+
+
+## ⚙️ Setup & Installation
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/FranzZbinden/NN-Digit-Recognition.git
+   cd NN-Digit-Recognition
+   
+---
+
+2. **Create & activate a virtual environment**
+   ```bash
+   python3.10 -m venv venv
+   source venv/bin/activate       # for Linux / macOS
+   venv\Scripts\activate          # for Windows
+
+---
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+
+## 🛠 Technologies & Dependencies
+- **Python 3.10**  
+- [TensorFlow / Keras](https://www.tensorflow.org/)  
+- [NumPy](https://numpy.org/)  
+- [OpenCV](https://opencv.org/)  
+
+All dependencies are listed in `requirements.txt`.
 
 ---
 
@@ -48,32 +70,8 @@ This project was developed using **Python 3.10**, because TensorFlow supports Py
 Install all dependencies from `requirements.txt`:
 ```powershell
 python -m pip install -r requirements.txt
-# or, if Python is invoked as 'py'
-py -m pip install -r requirements.txt
 ```
 ---
-
-## Configuration (.env)
-
-This app reads `MODEL_MODULE` from the environment. Create a `.env` file in the project root (same folder as `requirements.txt`) to override the default model module.
-
-Example `.env`:
-
-```
-MODEL_MODULE=models.trainingModels.trainingModelTwo
-```
-
-Notes:
-- The default if unset is `models.trainingModels.trainingModelTwo`.
-- You can switch to the MLP with:
-
-```
-MODEL_MODULE=models.trainingModels.trainingModelOne
-```
-
-Without a `.env` file, you can also set it per session:
-- PowerShell: `$env:MODEL_MODULE="models.trainingModels.trainingModelTwo"`
-- Bash: `export MODEL_MODULE="models.trainingModels.trainingModelTwo"`
 
 ## How it works internally
 
