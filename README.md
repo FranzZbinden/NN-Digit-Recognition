@@ -52,10 +52,6 @@ It supports:
 
 ---
 
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-
 ## 🛠 Technologies & Dependencies
 - **Python 3.10**  
 - [TensorFlow / Keras](https://www.tensorflow.org/)  
@@ -66,11 +62,23 @@ All dependencies are listed in `requirements.txt`.
 
 ---
 
+## 🔧 Environment Variables
+
+This project uses an `.env` file for configuration. To set it up:
+
+1. **Create the `.env` file from the example**  
+   ```bash
+   cp .env.example .env        # Linux / macOS
+   copy .env.example .env      # Windows
+---
+
 ## Installing Libraries
 Install all dependencies from `requirements.txt`:
 ```powershell
 python -m pip install -r requirements.txt
 ```
+
+
 ---
 
 ## How it works internally
