@@ -2,21 +2,21 @@
 
 https://github.com/user-attachments/assets/df06494f-9058-482e-95bd-eef450d8261f
 
-# 🧠 NN-Digit Recognition
+# NN-Digit Recognition
 
 A Python project for handwritten digit recognition using a neural network.  
 This solution uses the **MNIST** dataset to train a model (via TensorFlow / Keras) and OpenCV for preprocessing, allowing predictions on custom digit images.
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 - [Overview](#-overview)
 - [Features](#-features)
 - [Technologies & Dependencies](#-technologies--dependencies)
 
 ---
 
-## 📖 Overview
+## Overview
 This project implements a simple neural network to recognize handwritten digits (0–9).  
 It supports:
 - Training a model on the MNIST dataset  
@@ -26,7 +26,7 @@ It supports:
 
 ---
 
-## ✨ Features
+## Features
 - End-to-end pipeline: **data → model → inference**  
 - Simple architecture (easy to understand & extend)  
 - Predict custom digit images (PNG, 28×28 grayscale)  
@@ -35,7 +35,7 @@ It supports:
 ---
 
 
-## ⚙️ Setup & Installation
+## Setup & Installation
 
 1. **Clone the repo**
    ```bash
@@ -52,7 +52,7 @@ It supports:
 
 ---
 
-## 🛠 Technologies & Dependencies
+## Technologies & Dependencies
 - **Python 3.10**  
 - [TensorFlow / Keras](https://www.tensorflow.org/)  
 - [NumPy](https://numpy.org/)  
@@ -62,7 +62,7 @@ All dependencies are listed in `requirements.txt`.
 
 ---
 
-## 🔧 Environment Variables
+## Environment Variables
 
 This project uses an `.env` file for configuration. To set it up:
 
